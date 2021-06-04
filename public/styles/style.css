@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  background-color: #f7fff7;
+  color: #1a535c;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #1a535c;
+}
+
+.container--main {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.form {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form__title {
+  font-size: 1.3rem;
+}
+.form__label {
+  margin-top: 1rem;
+}
+.form__label:not(:first-of-type) {
+  margin-top: 1rem;
+}
+.form__input {
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  background-color: #4ecdc4;
+  border-radius: 0.5rem;
+}
+.form ::-moz-placeholder {
+  color: #1a535c;
+}
+.form :-ms-input-placeholder {
+  color: #1a535c;
+}
+.form ::placeholder {
+  color: #1a535c;
+}
+.form__button {
+  margin-top: 0.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #1a535c;
+  color: #f7fff7;
+}
+
+.change-color {
+  background-color: #1a535c;
+  color: #f7fff7;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.main__inner {
+  padding-top: 5rem;
+}
+.main__title {
+  font-size: 2rem;
+}
+.main section:first-of-type {
+  margin-top: 3rem;
+}
+.main section:not(:first-of-type) {
+  margin-top: 2rem;
+}
+.main section {
+  text-align: start;
+}
+.main section h2 {
+  font-size: 1.5rem;
+}
+.main .first_1 {
+  border: 1px solid #1a535c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.main .two_2 {
+  border: 1px solid #1a535c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.main .three_3 {
+  border: 1px solid #1a535c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.main .blocks {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 1.5rem;
+}
+.main .block {
+  background-color: #4ecdc4;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 300ms linear;
+}
+.main .block__title {
+  font-size: 1.2rem;
+}
+.main .block__description {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.main .block__button {
+  text-align: end;
+  margin-top: 1rem;
+}
+.main .block__button button {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #ff6b6b;
+  color: #f7fff7;
+  margin-top: 1rem;
+}
+.main .block:hover {
+  background-color: #1a535c;
+  color: #f7fff7;
+  transition: 300ms linear;
+}
+.main__form {
+  padding-top: 1.5rem;
+}
+
+.footer {
+  padding: 4rem 0;
+}
+.footer__title {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

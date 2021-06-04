@@ -1,0 +1,156 @@
+$bg-color: #f7fff7;
+$text-color: #1a535c;
+$block-bg-color: #4ecdc4;
+$block-text-color: #1a535c;
+$delete-bg-color: #ff6b6b;
+$delete-color: #f7fff7;
+$input-bg-color: #4ecdc4;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: "Open Sans", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    color: $text-color;
+}
+
+.container--main {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.form {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 1.3rem;
+    }
+    &__label {
+        margin-top: 1rem;
+    }
+    &__label:not(:first-of-type) {
+        margin-top: 1rem;
+    }
+    &__input {
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+        margin-top: 0.7rem;
+        background-color: $input-bg-color;
+        border-radius: 0.5rem;
+    }
+    ::placeholder {
+        color: $text-color;
+    }
+    &__button {
+        margin-top: 0.7rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.5rem;
+        background-color: $block-text-color;
+        color: $bg-color;
+    }
+}
+
+.change-color {
+    background-color: $block-text-color;
+    color: $bg-color;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.main {
+    &__inner {
+        padding-top: 5rem;
+    }
+    &__title {
+        font-size: 2rem;
+    }
+    section:first-of-type {
+        margin-top: 3rem;
+    }
+    section:not(:first-of-type) {
+        margin-top: 2rem;
+    }
+    section {
+        text-align: start;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .first_1 {
+        border: 1px solid $text-color;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .two_2 {
+        border: 1px solid $text-color;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .three_3 {
+        border: 1px solid $text-color;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .blocks {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+
+        margin-top: 1.5rem;
+    }
+    .block {
+        background-color: $block-bg-color;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__title {
+            font-size: 1.2rem;
+        }
+        &__description {
+            font-size: 1rem;
+            padding-top: 1rem;
+        }
+        transition: 300ms linear;
+
+        &__button {
+            text-align: end;
+            margin-top: 1rem;
+
+            button {
+                padding: 0.4rem 0.6rem;
+                border-radius: 0.5rem;
+                background-color: $delete-bg-color;
+                color: $delete-color;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .block:hover {
+        background-color: $block-text-color;
+        color: $bg-color;
+        transition: 300ms linear;
+    }
+    &__form {
+        padding-top: 1.5rem;
+    }
+}
+
+.footer {
+    padding: 4rem 0;
+    &__title {
+        font-size: 1.5rem;
+    }
+}
